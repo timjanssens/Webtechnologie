@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>les 09 30</title>
+</head>
+
+<body>
+
+    <h1>simpele tabel</h1>
+
+
+    <table>
+        <tr>
+            <td>linksboven</td>
+            <td>rechtsboven</td>
+        </tr>
+        <tr>
+            <td>linksonder</td>
+            <td>rechtsonder</td>
+        </tr>
+    </table>
+
+
+    <h1>headers</h1>
+    <table>
+        <tr>
+            <th>linksboven</th>
+            <th>rechtsboven</th>
+        </tr>
+        <tr>
+            <th>linksonder</th>
+            <td>rechtsonder</td>
+        </tr>
+    </table>
+
+
+    <h1>cellen samenvoegen</h1>
+
+    <table border="1px solid black">
+        <tr>
+            <th></th>
+            <th>-01.006</th>
+            <th>-01.007</th>
+            <th>-01.008</th>
+        </tr>
+        <tr>
+            <th>18-19</th>
+            <td rowspan="3">linux</td>
+            <td rowspan="2">webtech</td>
+            <td>IT-essentials</td>
+        </tr>
+        <tr>
+            <th>19-20</th>
+            <td rowspan="2">Electronica</td>
+        </tr>
+        <tr>
+            <th>20-21</th>
+            <td>communicatie</td>
+        </tr>
+    </table>
+
+
+
+    <h1>cellen samenvoegen</h1>
+
+    <table border="1px solid black">
+        <caption>Planning IT</caption>
+        <tr>
+            <th></th>
+            <th>-01.006</th>
+            <th>-01.007</th>
+            <th>-01.008</th>
+        </tr>
+        <tr>
+            <th>18-19</th>
+            <td rowspan="3">linux</td>
+            <td>webtech</td>
+            <td>IT-essentials</td>
+        </tr>
+        <tr>
+            <th>19-20</th>
+            <td rowspan="2" colspan="2">Electronica</td>
+        </tr>
+        <tr>
+            <th>20-21</th>
+
+        </tr>
+    </table>
+
+
+
+    <h1>inkomstentabel-oef</h1>
+    <table border="solid black 1">
+        <caption>inkomstentabel</caption>
+        <colgroup>
+            <col>
+            <col span="2">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>datum</th>
+                <th>inkomsten</th>
+                <th>uitgaven</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1 mei</th>
+                <td>20</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <th>2 mei</th>
+                <td>40</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th>totaal</th>
+            <td>60</td>
+            <td>60</td>
+        </tfoot>
+    </table>
+
+
+    <h1>formulieren</h1>
+    <form action="https://www.example.com" method="GET">
+        <input type="text" name="username" id="usernameTxt" placeholder="username">
+        <input type="password" name="password" id="passwordTxt" placeholder="password">
+
+        <input type="submit" value="submit">
+    </form>
+
+
+    <h1>keuze</h1>
+    <form>
+        <input type="radio" name="genre" id="" value="rock">rock <br>
+        <input type="radio" name="genre" id="" value="pop">pop <br>
+        <input type="radio" name="genre" id="" value="jazz">jazz <br>
+
+        Ik ben akkoord met de voorwaarden<input type="checkbox" name="voorwaarden" checked> <br>
+
+        <select name="devices" id="" multiple>
+            <!--multiple toegevoegd -->
+            <option value="ipod">ipod</option>
+            <option value="radio">radio</option>
+            <option value="computer">computer</option>
+        </select>
+
+    </form>
+
+
+
+    <h1>keuze met legend en fieldset en required</h1>
+    <form>
+        <fieldset>
+            <legend>login</legend>
+            <input type="text" name="username" id="usernameTxt" placeholder="username" required> <br>
+            <input type="password" name="password" id="passwordTxt" placeholder="password"> <br>
+    
+            <input type="submit" value="submit">
+        </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
