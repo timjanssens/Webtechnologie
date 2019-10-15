@@ -1,0 +1,35 @@
+* {
+    margin: 15px 25px 15px 20px;
+}
+
+@font-face { 
+    font-family: Steelfish; src: url('/labo-05/fonts/steelfish\ rg.ttf');
+}
+
+h1 {
+    font-family: Steelfish, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: rgb(151, 0, 12);
+}
+
+h2 {
+    font-family: Steelfish, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(196, 0, 9);
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgb(104, 103, 108);
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(104, 103, 108);
+}
