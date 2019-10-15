@@ -1,0 +1,39 @@
+* {
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 18px;
+    text-decoration: underline;
+    color:darkred;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 11px;
+}
+
+ul {
+    list-style-type: square;    
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+img {
+    max-width: 150px;
+}
+

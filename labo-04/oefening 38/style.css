@@ -1,0 +1,73 @@
+ul {
+    list-style-image: url("plusSign.PNG");
+}
+
+table {
+    width: 600px;
+    border-collapse: collapse;
+
+}
+
+thead {
+    color: white;
+    background-color: #00a3ee;
+
+}
+
+.fatblueUnderline {
+    border-bottom: 3px solid blue;
+}
+
+tbody {
+    background-color: rgb(127, 185, 224);
+    text-align: left;
+}
+
+thead :nth-child(1) {
+    border-radius: 5px 0px 0px 0px;
+}
+
+thead :nth-child(4) {
+  border-top-right-radius: 5px;
+}
+
+td,th {
+    padding: 5px;
+}
+
+form {
+    width: 350px;
+    margin-top: 25px;
+}
+
+fieldset {
+    border: 1px solid lightgray;
+    padding: 15px;
+}
+
+
+.formLeft {
+    margin: 15px 0px 0px 0px;
+
+}
+
+fieldset>label {
+    display: inline-block;
+    width: 6em;
+}
+
+input[type=text] {
+    /* float: right;  kan ook maar is ouderwets*/
+    margin-right: 30px;
+    height: 10px;
+    border: 1px solid lightgray;
+    
+}
+
+input[type=submit] {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: 0 none;
+    padding: 5px;
+}

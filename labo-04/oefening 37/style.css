@@ -1,0 +1,17 @@
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+
+.bold {
+    font-weight: bold;
+}
+
+.blue {
+    color: #006fee;
+}
+
+.shadow {
+    text-shadow: 0px 1px 4px #000000;
+}
