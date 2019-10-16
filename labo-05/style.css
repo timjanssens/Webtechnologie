@@ -1,5 +1,6 @@
 * {
     margin: 15px 25px 15px 20px;
+
 }
 
 @font-face { 
@@ -33,3 +34,30 @@ p {
     font-weight: 400;
     color: rgb(104, 103, 108);
 }
+
+header {
+    margin: -30px -50px 0px -40px;
+    padding: 20px;
+    background-color: rgb(224, 125, 130);
+}
+
+a {
+    color: rgb(151, 0, 12);
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(196, 0, 9);
+}
+
+nav  {
+ 
+    float: right;
+    font-family: Steelfish, Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(196, 0, 9);
+    margin-top: 5px;;
+}
+
+
