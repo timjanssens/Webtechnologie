@@ -3,8 +3,9 @@
 
 }
 
-@font-face { 
-    font-family: Steelfish; src: url('/labo-05/fonts/steelfish\ rg.ttf');
+@font-face {
+    font-family: Steelfish;
+    src: url('/labo-05/fonts/steelfish\ rg.ttf');
 }
 
 h1 {
@@ -50,14 +51,79 @@ a:active {
     color: rgb(196, 0, 9);
 }
 
-nav  {
- 
+nav {
+
     float: right;
     font-family: Steelfish, Helvetica, sans-serif;
     font-size: 2rem;
     font-weight: 400;
     color: rgb(196, 0, 9);
-    margin-top: 5px;;
+    margin-top: 5px;
 }
 
+header img {
+    margin-left: 60px;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+        'header header'
+        'section aside'
+        'footer footer';
+}
+
+header {
+    grid-area: header;
+}
+
+section {
+    grid-area: section;
+}
+
+aside {
+    grid-area: aside;
+    width: 50%;
+}
+
+footer {
+    grid-area: footer;
+}
+
+article {
+    display: grid;
+    grid-template-columns: 35% 55% 10%;
+    grid-template-areas: 
+    'img text button';
+}
+
+article img {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+}
+
+article button {
+    grid-area: button;
+}
+
+article .text {
+    grid-area: text;
+}
+
+article button {
+    height: 40px;
+    width: 130px;
+    color: white;
+    background-color: rgb(151, 0, 12);
+    border: none;
+    margin-top: 280px;
+}
+
+article button:active {
+    background-color: rgb(196, 0, 9);
+    border: none;
+}
 
