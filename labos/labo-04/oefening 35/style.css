@@ -1,0 +1,20 @@
+*{
+    background-color: darkgrey;
+    padding: 15px;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: white;
+    background-color: teal;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: white;
+    background-color: darkorchid;
+}
+
+p {
+    background-color: lightgray
+}

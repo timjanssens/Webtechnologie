@@ -1,0 +1,76 @@
+* {
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+}
+
+h1 {
+    color: red;
+    font-size: 200%;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+h1.blauw {
+    color: blue;
+}
+
+h2 {
+    color: green;
+    font-weight: bold;
+    font: size 1.2em;
+}
+
+section p {
+    color: rgb(200, 100, 50);
+}
+
+nav>a {
+    font-weight: bold;
+    text-shadow: 2px 2px 7px black;
+
+}
+
+nav>a:link{
+    color: pink;
+}
+
+nav>a:visited{
+    color: purple;
+}
+
+
+p>a {
+    color: #00ff00;
+}
+
+ul {
+    background-color: hsl(10, 70%, 70%);
+}
+
+#lijn{
+    line-height: 1.6em;
+    letter-spacing: 0.5em;
+    word-spacing: 2em;
+}
+
+li {
+    list-style-image: url(../labo-02/02-HTML-hfst\ 01-05-labo-ei.png)
+}
+
+p:first-letter{
+    font-size: 200%;
+}
+
+article {
+    text-indent: 10%;
+}
+
+section{
+    border: 3px dotted black;
+    padding: 20px;
+    margin: 20px;
+    width: 60%;
+    
+}
