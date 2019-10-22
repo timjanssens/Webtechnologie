@@ -1,0 +1,26 @@
+* {
+    margin: 15px 20px 15px 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+
+@font-face {
+    font-family: "Alfphabet";
+    src: url('../fonts/Alfphabet.otf');
+}
+
+h1 {
+    font-family: Alfphabet;
+    font-size: 20px;
+    font-weight: 800;
+    color: #006ab3; 
+}
+
+h2 {
+    font-family: Alfphabet;
+    font-size: 16px;
+    font-weight: 400;
+    color: #006ab3; 
+}
