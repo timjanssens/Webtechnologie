@@ -14,13 +14,15 @@
 <body>
   <header id="home">
     <!-- HIER KOMT LOGO EN NAVIGATIE -->
-    <div class="logo"><a href="https://www.b-europe.com/NL/Stations/Antwerpen-Centraal" target="_blank"><img
-          src="./images/logo.jpg" alt="logo Antwerpen Centraal"></a></div>
+    <a class="logo" href="https://www.b-europe.com/NL/Stations/Antwerpen-Centraal" target="_blank"><img
+        src="./images/logo.jpg" alt="logo Antwerpen Centraal"></a>
     <nav>
-      <p><a href="#home">Home</a></p>
-      <p><a href="#history">Geschiedenis</a></p>
-      <p><a href="#gallery">Galerij</a></p>
-      <p><a href="#contact">Contact</a></p>
+      <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#gallery">Galerij</a></li>
+        <li><a href="#history">Geschiedenis</a></li>
+        <li><a href="#home">Home</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -51,7 +53,7 @@
         iure culpa sed libero saepe vero unde molestias magni quod. Voluptatum saepe quibusdam quisquam mollitia amet
         nulla voluptatibus, enim qui praesentium sit eos nobis, distinctio libero voluptatem consequatur dolore beatae
         perspiciatis labore, magnam odit explicabo! Reiciendis, laboriosam odio! Sapiente magni earum labore vitae sed
-        obcaecati laborum fugiat, voluptatum, impedit libero id illum eveniet asperiores ullam odio recusandae modi vel 
+        obcaecati laborum fugiat, voluptatum, impedit libero id illum eveniet asperiores ullam odio recusandae modi vel
       </p>
       <ul>
         <li>Ontwerp</li>
@@ -69,20 +71,56 @@
 
     <section id="gallery">
       <!-- HIER KOMT HET DEEL GALERIJ -->
-      <img src="/opdracht1-startbestand-d/opdracht1-startbestand-d/images/station1-lang.jpg" alt="grede foto van inkomhal">
+      <h2>Galerij</h2>
+      <img id="big" src="/opdracht1-startbestand-d/opdracht1-startbestand-d/images/station1-lang.jpg"
+        alt="brede foto van inkomhal">
+      <div class="flex">
+        <img src="/opdracht1-startbestand-d/opdracht1-startbestand-d/images/station2-klein.jpg" alt="inkomhal omhoog">
+        <img src="/opdracht1-startbestand-d/opdracht1-startbestand-d/images/station3-klein.jpg" alt="gaanderijen">
+        <img src="/opdracht1-startbestand-d/opdracht1-startbestand-d/images/station4-klein.jpg"
+          alt="voorzijde met groen">
+      </div>
     </section>
 
     <section id="contact">
       <!-- HIER KOMT HET DEEL CONTACT -->
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <input type="text" name="name" id="name" placeholder="Naam" required>
+        <input type="email" name="mail" id="mail" placeholder="E-mail" required>
+        <textarea name="message" id="message" cols="30" rows="5" placeholder="Bericht"></textarea>
+        <div id="goedkeuring"><input type="checkbox" name="consent" id="consent" required> akkoord met A.V. </div>
+        <input type="submit" value="Verzenden" id="submitForm">
+      </form>
     </section>
   </main>
 
   <aside class="">
     <!-- HIER KOMT DE ZIJBALK -->
+    <h2>zoeken</h2>
+    <form action="#" method="get">
+      <input type="search" name="search" id="search">
+      <input type="submit" value="Zoeken">
+    </form>
+
+    <h2>Nieuws</h2>
+    <ul>
+      <li><a href="#">Nieuwsbericht 1</a></li>
+      <li><a href="#">Nieuwsbericht 2</a></li>
+      <li><a href="#">Nieuwsbericht 3</a></li>
+      <li><a href="#">Nieuwsbericht 4</a></li>
+    </ul>
+
+    <img src="/opdracht1-startbestand-d/opdracht1-startbestand-d/images/aside.png" alt="fisheye Antwerpen-Centraal">
   </aside>
+
+  <div id="backHome"> <a href="#home">Back to home</a> </div>
 
   <footer>
     <!-- HIER KOMEN DE CONTACTGEGEVENS -->
+    <p>
+      <address>Website gemaakt door &copy; Janssens Tim | Graduaat Programmeren</address>
+    </p>
   </footer>
 </body>
 
