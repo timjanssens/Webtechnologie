@@ -109,6 +109,7 @@ li a {
 
 aside [type="search"] {
     width: 90%;
+    height: 40px;
 }
 
 aside [type="submit"] {

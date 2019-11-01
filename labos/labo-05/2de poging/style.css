@@ -1,0 +1,158 @@
+
+
+
+
+/* grid body definieren */
+
+body {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas: 
+    'header header'
+    'main aside'
+    'footer footer';
+}
+
+header {grid-area: header;}
+main {grid-area: main;}
+aside{grid-area: aside;}
+footer{grid-area: footer;}
+
+
+/* hele webpagina */
+
+@font-face {
+    font-family: Steelfish;
+    src: url(./fonts/steelfish\ rg.ttf);
+}
+
+h1 {
+    font-family: 'Steelfish', Helvetica, sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: rgb(151,0,12);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: 'Steelfish', Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(196,0,9);
+    text-transform: uppercase;
+}
+
+* {
+    margin: 15px 20px 15px 25px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: rgb(104,103,108);
+}
+
+
+a {
+    color: rgb(151,0,12);
+    text-decoration: none;
+}
+
+a :active {
+    color: rgb(196,0,9);
+}
+
+button {
+    color: white;
+    background-color: rgb(151,0,12);
+    border:none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: auto;
+    padding-right: auto;
+    text-transform: uppercase;
+
+}
+
+button:active{
+    background-color: rgb(196,0,9);
+}
+
+ol li {
+    list-style-image: url(./imgs/list-item.png);
+}
+
+ol {
+    margin-left: -15px;
+}
+
+
+
+/* enkel header */
+
+#home {
+    width: 30%;
+    float: left;
+}
+
+nav {
+    width: 60%;
+    float: right;
+}
+ 
+
+nav li {
+    float: right;
+    margin-top: 0px;
+    text-transform: uppercase;
+    list-style-type: none !important;
+    font-size: 150%;
+}
+
+/* enkel main */
+
+/* schikking van het article */
+main img {
+    float:left;
+    width: 25%;
+}
+
+.text {
+    width: 50%;
+    overflow: auto;
+}
+
+main button {
+    position: relative;
+    bottom: 70px;
+    left: 80%;
+}
+
+article {
+    margin-bottom:-50px;
+}
+
+/* enkel aside */
+
+aside input[type="search"] {
+    width: 100%;
+    margin-left: 0px;
+    height: 25px;
+}
+
+aside button {
+    margin-left: 75%;
+}
+
+
+/* enkel footer */
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
