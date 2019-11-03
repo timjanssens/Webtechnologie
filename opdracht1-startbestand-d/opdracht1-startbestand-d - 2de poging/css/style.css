@@ -1,0 +1,190 @@
+* {
+    margin: 15px 20px 15px 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+
+@font-face {
+    font-family: "Alfphabet";
+    src: url('../fonts/Alfphabet.otf');
+}
+
+body {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-areas:
+        'header header'
+        'main aside'
+        'footer footer';
+
+
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+
+
+h1 {
+    font-family: Alfphabet;
+    font-size: 20px;
+    font-weight: 800;
+    color: #006ab3;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Alfphabet;
+    font-size: 16px;
+    font-weight: 400;
+    color: #006ab3;
+    text-transform: uppercase;
+}
+
+aside li,
+main li {
+    list-style-image: url(/opdracht1-startbestand-d/opdracht1-startbestand-d/images/list-item.png);
+    margin-left: -20px;
+
+}
+
+
+aside li a {
+    text-decoration: none;
+}
+
+header.logo {
+    width: 35%;
+}
+
+
+
+nav li,
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    float: right;
+    list-style-type: none;
+    font-size: 130%;
+    margin: 0 0 0 20px;
+
+}
+
+header nav {
+    width: 60%;
+    float: right;
+}
+
+[type="submit"] {
+    /* padding: 15px auto 15px auto; */
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: auto;
+    padding-right: auto;
+    background-color: #168cda;
+    color: white;
+}
+
+li,
+li a {
+    color: #168cda;
+}
+
+
+aside [type="search"] {
+    width: 90%;
+    height: 40px;
+}
+
+aside [type="submit"] {
+    width: 50%;
+    text-transform: uppercase;
+    margin-left: 50%;
+
+}
+
+aside form {
+    margin-left: 0;
+}
+
+aside img {
+    width: 85%;
+}
+
+
+
+#backHome {
+    position: fixed;
+    bottom: 15px;
+
+    margin-left: -50px;
+}
+
+#backHome a {
+    text-transform: uppercase;
+    color: #168cda;
+    text-decoration: none;
+}
+
+#big {
+    width: 95%;
+
+}
+
+.flex {
+    display: flex;
+
+}
+
+.flex>img {
+    width: 32%;
+    margin: 0 5px 0 5px;
+}
+
+#contact form {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-areas:
+        'naam bericht consent'
+        'mail bericht submitForm';
+    margin-left: 0;
+}
+
+#name {
+    grid-area: naam;
+    height: 40px;
+}
+
+#mail {
+    grid-area: mail;
+    height: 40px;
+}
+
+#message {
+    grid-area: bericht;
+}
+
+#goedkeuring {
+    grid-area: consent;
+    margin: 10px 0 0 0;
+}
+
+#submitForm {
+    grid-area: submitForm;
+}
