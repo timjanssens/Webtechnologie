@@ -1,0 +1,210 @@
+/* Whole document */
+* {
+    margin: 15px 25px 15px 20px;
+}
+
+@font-face {
+    font-family: Alfphabet;
+    src: url(../fonts/Alfphabet.otf);
+}
+
+h1 {
+    font-family: Alfphabet;
+    font-size: 20px;
+    font-weight: 800;
+    color: #006ab3;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: Alfphabet;
+    font-size: 16px;
+    font-weight: 400;
+    color: #006ab3;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: 'Times New Roman', 'Times, serif';
+    font-size: 12px;
+    font-weight: 400;
+    color: #3a3a3a;
+}
+
+
+
+
+
+
+
+/*grid whole doc*/
+
+body {
+    display: grid;
+    grid: 
+    'header header header header'
+    'main main main aside'
+    'footer footer footer footer';
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header { 
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* header  */
+
+
+.logo {
+    float: left;
+}
+
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+header li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #006ab3;
+    text-transform: uppercase;
+}
+
+header li {
+    justify-content: flex-end;
+}
+
+
+/* main  */
+
+main ul, main li {
+    list-style: url(../images/list-item.png);
+}
+
+main li a,main li{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 200;
+    color: #3a3a3a;
+}
+
+/* galerij  */
+
+#photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bigPic  {
+    flex: 1 1 100%;  
+    width: 100px;
+}
+
+.smallPic {
+    flex: 1 1 28%;
+    margin: 5px 0px 0px 5px;
+    width:100px;
+}
+
+/* Grid contact */
+#contactcontainer {
+    display: grid;
+    grid-template-areas:
+    'name bericht consent'
+    'email bericht verzenden';
+    grid-template-columns: 30% 30% 30%;
+}
+
+#name {
+    grid-area: name;
+}
+
+#mail {
+    grid-area: email;
+}
+
+#bericht {
+    grid-area: bericht;
+}
+
+
+#goedkeuring {
+    grid-area: consent;
+    margin: 10px 0 0 0;
+}
+
+#verzenden {
+    grid-area: verzenden;
+}
+
+
+
+/* contact  */
+
+
+#consent {
+    margin-top: 10px;
+}
+
+
+/* aside  */
+aside ul, aside li {
+    list-style: url(../images/list-item.png);
+    margin-top: 30px;
+}
+
+aside li a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #006ab3;
+    text-transform: uppercase;
+}
+
+#zoeken {
+    margin-left: 77%;
+}
+#zoekveld {
+    margin: 0px;
+    width: 100%;
+}
+
+/* footer  */
+
+footer {
+    text-align: center;
+}
+
+#backToTop {
+    color: #006ab3;
+    position: fixed;
+    right:-30px;
+    bottom: 30px;
+}
+
+#backToTop a{
+    text-decoration: none;
+    color: #006ab3;
+
+}
+
+
+
+

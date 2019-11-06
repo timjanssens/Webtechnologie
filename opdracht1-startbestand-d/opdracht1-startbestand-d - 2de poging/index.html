@@ -82,11 +82,11 @@
     <section id="gallery">
       <!-- HIER KOMT HET DEEL GALERIJ -->
       <h2>Galerij</h2>
-      <div class="photos">
-        <img src="./images/station1-lang.jpg" alt="brede foto Antwerpen Centraal">
-        <img src="./images/station2-klein.jpg" alt="inkomhal">
-        <img src="./images/station4-klein.jpg" alt="nieuw gedeelte">
-        <img src="./images/station6-klein.jpg" alt="voorkant">
+      <div id="photos">
+          <img class="bigPic" src="./images/station1-lang.jpg" alt="brede foto Antwerpen Centraal">
+          <img class="smallPic" src="./images/station2-klein.jpg" alt="inkomhal">
+          <img class="smallPic" src="./images/station4-klein.jpg" alt="nieuw gedeelte">
+          <img class="smallPic" src="./images/station6-klein.jpg" alt="voorkant">
       </div>
     </section>
 
@@ -95,15 +95,14 @@
       <h2>
         Contact
       </h2>
-
-      <form action="#" method="post">
-        <input type="text" name="name" id="name" placeholder="Naam" required>
-        <input type="email" name="mail" id="mail" placeholder="E-mail" required>
+      <form action="#" method="post" id="contactcontainer">
+        <input  type="text" name="name" id="name" placeholder="Naam" required>
+        <input  type="email" name="mail" id="mail" placeholder="E-mail" required>
         <Textarea name="bericht" id="bericht" cols="30" rows="5" required>Bericht</Textarea>
-        <input type="checkbox" name="consent" id="constent" required> Akkoord met A.V.
-        <input type="submit" value="Verzenden">
+        <div id="goedkeuring"><input type="checkbox" name="consent" id="consent" required> akkoord met A.V. </div>
+        <input type="submit" value="Verzenden" id="verzenden">
       </form>
-
+    </div>
     </section>
   </main>
 
@@ -113,8 +112,8 @@
       Zoeken
     </h2>
     <form action="#" method="get">
-      <input type="search" name="zoeken" id="zoeken">
-      <input type="submit" value="Zoeken">
+      <input type="search" name="zoeken" id="zoekveld">
+      <input type="submit" value="Zoeken" id="zoeken">
     </form>
 
     <h2>
@@ -140,6 +139,9 @@
       Website gemaakt door &copy; Janssens Tim | Graduaat Programmeren
     </address>
   </footer>
+  <div id="backToTop">
+    <a href="#home">Back to top</a>
+  </div>
 </body>
 
 </html>
