@@ -53,7 +53,7 @@ for (busTeller = 0; busTeller < bussen.length; busTeller++) {
     heading.textContent += bussen[busTeller].bestemming + " : \r\n";
     // // //lus  maken om de passagiers uit het object te halen en deze samen te voegen
     for (let passagierTeller = 0; passagierTeller < bussen[busTeller].passengers.length; passagierTeller++) {
-        heading.textContent += bussen[busTeller].passengers[passagierTeller].name + ", ";
+        heading.textContent += passagierTeller+1 + ")  " +  bussen[busTeller].passengers[passagierTeller].name + "\r\n";
     }
     heading.textContent += "\r\n" + "\r\n";
 }
