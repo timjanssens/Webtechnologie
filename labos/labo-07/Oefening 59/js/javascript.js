@@ -21,7 +21,7 @@ function Passenger(name, nationality, age) {
 let bussen = [];
 
 function addBus(bestemming, nummerplaat, zetelsTotaal, zetelsBezet) {
-    bus = new Bus(bestemming, nummerplaat, zetelsTotaal, zetelsBezet);
+    let bus = new Bus(bestemming, nummerplaat, zetelsTotaal, zetelsBezet);
     bussen.push(bus);
 }
 
@@ -41,6 +41,7 @@ function addPassenger(name, nationality, age, bus) {
 
 addPassenger("Tim", "Belgium", 38, bussen[0]);
 addPassenger("Lisbeth", "Belgium", 37, bussen[0]);
+
 
 addPassenger("Babs", "Belgium", 17, bussen[1]);
 addPassenger("Kyan", "Belgium", 16, bussen[1]);
