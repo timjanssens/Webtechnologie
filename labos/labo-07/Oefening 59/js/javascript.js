@@ -25,14 +25,15 @@ function addBus(bestemming, nummerplaat, zetelsTotaal, zetelsBezet) {
     bussen.push(bus);
 }
 
+
+//make objects bus
 addBus("Barcelona", "1 ABC 123", 55, 43);
 addBus("Boedapest", "2 QWE 123", 80, 50);
 
 
 
-//make objects bus
 
-
+//beter is deze functie toevoegen aan het object bus
 function addPassenger(name, nationality, age, bus) {
     bus.zetelsBezet++;
     let passenger = new Passenger(name, nationality, age);
