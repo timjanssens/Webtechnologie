@@ -34,20 +34,21 @@ let openingHourArr = [
 const MYLIST = document.getElementById("openingHoursList");
 
 //functie wordt pas uitgevoerd wanneer de rest van de pagina geladen is.
-window.addEventListener("load",addOpeningHours);
+window.addEventListener("load", addOpeningHours);
 
 //functie om Li's te maken en om array met openingsuren in de li's te plaatsen
 // --> gebruik van een for of loop
 function addOpeningHours() {
-for (const liOpeningHour of openingHourArr) {
-    let listItem = document.createElement("li");
-    listItem.textContent = liOpeningHour;
-    MYLIST.appendChild(listItem);
+    for (const liOpeningHour of openingHourArr) {
+        let listItem = document.createElement("li");
+        listItem.textContent = liOpeningHour;
+        MYLIST.appendChild(listItem);
+    }
 }
-}
 
+//Oefening 72 toon bestemming nadat op button is geclicked
 
-
+//array van bestemmingen
 let destinationArr = [{
         "name": "Budapest",
         "price": 50
@@ -66,6 +67,28 @@ let destinationArr = [{
     }
 ];
 
+const MYDESTINATIONLIST = document.getElementById("destinations");
+const DESTINATIONBTN = document.getElementById("destinationBtn");
+
+//eventlistener na click op destinationbutton
+//once true zorgt ervoor dat het maar 1 x wordt uitgevoerd, zelfs na meerdere klikken
+DESTINATIONBTN.addEventListener("click", addDestionations, {
+    once: true
+});
+
+function addDestionations() {
+    for (const destination of destinationArr) {
+        let listItems = document.createElement("li");
+        listItems.textContent = "Bestemming: " + destination.name + "  --> Prijs: " + destination.price;
+        MYDESTINATIONLIST.appendChild(listItems);
+    }
+}
+
+
+//Oefening 73  array bussen laten uitwerken in articles ed
+
+
+
 let busTypes = [{
         "type": "Lijnbus",
         "description": "Een lijnbus is een bus die wordt ingezet voor openbaar vervoer. Er kan onderscheid gemaakt worden tussen stads-, streek- en langeafstandsbussen. Lijnbussen zijn vaak voorzien van apparatuur voor verkeerslichtbeïnvloeding, zoals VETAG. "
@@ -83,3 +106,22 @@ let busTypes = [{
         "description": "Langeafstandsbussen zijn soms 15 meter lang (in plaats van de voor andere bussen gebruikelijke 12 meter), en voorzien van 44 zitplaatsen. Bij de achteras is dan een extra as bijgeplaatst (sleepas) om het draagvermogen per wiel binnen de wettelijke grenzen te houden. Deze zogenaamde derde as welke bij bochten meesturend is, wordt bij een snelheid van 20 km/u of meer weer geblokkeerd om de stabiliteit van de bus bij hogere snelheden te waarborgen. "
     }
 ]
+
+
+const BUSSESSECTION = document.getElementById("busses");
+
+
+//for loop om de verschillende articles te nummeren
+for (let index = 0; index < busTypes.length; index++) {
+    let busSection = document.createElement("article");
+    BUSSESSECTION.appendChild(busSection);
+    //het geven van een id bij het article
+    busSection.id = "article"+busTypes[index].type;
+    let busArticle = document.getElementById("article"+busTypes[index].type);
+    let busH3 = document.createElement("h3");
+    busArticle.appendChild(busH3);
+    busH3.textContent = busTypes[index].type;
+    let busPar = document.createElement("p");
+    busArticle.appendChild(busPar);
+    busPar.textContent = busTypes[index].description;
+}
