@@ -116,12 +116,62 @@ for (let index = 0; index < busTypes.length; index++) {
     let busSection = document.createElement("article");
     BUSSESSECTION.appendChild(busSection);
     //het geven van een id bij het article
-    busSection.id = "article"+busTypes[index].type;
-    let busArticle = document.getElementById("article"+busTypes[index].type);
+    busSection.id = "article" + busTypes[index].type;
+    let busArticle = document.getElementById("article" + busTypes[index].type);
     let busH3 = document.createElement("h3");
     busArticle.appendChild(busH3);
     busH3.textContent = busTypes[index].type;
     let busPar = document.createElement("p");
     busArticle.appendChild(busPar);
     busPar.textContent = busTypes[index].description;
+}
+
+
+
+//oefening 74 pas achterggrond en styling css aan 
+
+function changeStylingWebsite(e) {
+    e.preventDefault();
+
+    let formData = new FormData(ELSETTINGSFORM);
+    let selectedBackgroundColor = formData.get("backgroundColor");
+
+    ELBODY.style.backgroundColor = selectedBackgroundColor;
+
+
+}
+
+
+const ELSETTINGSFORM = document.getElementById("settingsForm");
+const ELBODY = document.getElementsByTagName("body")[0];
+
+//functie wordt uitgevoerd wanneer er submit wordt
+ELSETTINGSFORM.addEventListener("submit", changeStylingWebsite);
+
+//nog maken dat de ronde of vietkante geselecteerd worden
+
+
+
+
+
+//Oefening 75
+
+const PRICTABLEBODY = document.getElementById("priceTableBody");
+
+window.addEventListener("load", addPricetable);
+
+function addPricetable() {
+    for (let city of destinationArr) {
+        let rowTr = document.createElement("tr");
+        let cityTd = document.createElement("td");
+        let priceTd = document.createElement("td");
+
+        cityTd.textContent = city.name;
+        priceTd.textContent = city.price;
+
+        rowTr.appendChild(cityTd);
+        rowTr.appendChild(priceTd);
+        PRICTABLEBODY.appendChild(rowTr);
+
+    }
 }
